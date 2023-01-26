@@ -9,6 +9,7 @@ import {
 } from "./Filter.styled";
 
 import { useState } from "react";
+import useWindowSize from "../../../../common/hooks/useWindowSize";
 
 import ChevronDownSVG from "../../../../assets/svg/chevron-down.svg";
 
@@ -19,9 +20,11 @@ export const Filter = () => {
     setFilterMenuOpened((prevState) => !prevState);
   };
 
+  const { width } = useWindowSize();
+
   return (
     <Container onClick={filterMenuHandler}>
-      <Text>Filter</Text>
+      <Text>{width < 768 ? "Filter" : "Filter by status"}</Text>
       <ChevronDownImg src={ChevronDownSVG} alt="" />
       {filterMenuOpened ? (
         <FilterMenu>

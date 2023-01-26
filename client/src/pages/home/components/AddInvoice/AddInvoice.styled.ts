@@ -9,7 +9,7 @@ export const Container = styled.div`
   gap: 8px;
 
   margin-left: 18px;
-  padding: 6px;
+  padding: 0 6px;
 
   background: #7c5dfa;
   border-radius: 24px;
@@ -18,6 +18,13 @@ export const Container = styled.div`
 
   &:hover {
     background: #9277ff;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 150px;
+    height: 48px;
+    gap: 16px;
+    padding: 0 8px;
   }
 `;
 

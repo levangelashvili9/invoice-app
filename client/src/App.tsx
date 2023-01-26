@@ -8,6 +8,8 @@ import { MobileHeader } from "./common/components/MobileHeader";
 import { HomePage } from "./pages/home";
 import { CreateInvoicePage } from "./pages/create-invoice";
 
+// import useWindowSize from "./common/hooks/useWindowSize";
+
 function App() {
   const { isDarkMode } = useAppSelector((state) => state.theme);
 

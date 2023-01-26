@@ -16,8 +16,10 @@ import { Filter } from "./components/Filter";
 import { AddInvoice } from "./components/AddInvoice";
 import { InvoicesList } from "./components/InvoicesList";
 import { useState } from "react";
+import { useGetDataQuery } from "../../redux/api/apiSlice";
 
 export const HomePage = () => {
+  const { data } = useGetDataQuery(undefined);
   const [isEmpty, setIsEmpty] = useState<boolean>(false);
 
   return (
@@ -25,7 +27,11 @@ export const HomePage = () => {
       <Header>
         <div>
           <Heading>Invoices</Heading>
-          <NumOfInvoices>No invoices</NumOfInvoices>
+          <NumOfInvoices>
+            {data && data.length > 0
+              ? `There are ${data.length} pending invoices`
+              : "No invoices"}
+          </NumOfInvoices>
         </div>
         <Div>
           <Filter />

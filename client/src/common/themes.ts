@@ -17,6 +17,8 @@ export const lightTheme = {
   thirdButtonColor: "#f9fafe",
   thirdButtonHoverColor: "#DFE3FA",
   fourthButtonHoverColor: "#0C0E16",
+  inputColor: "#fff",
+  inputBorder: "1px solid #DFE3FA",
 };
 
 export const darkTheme = {
@@ -32,6 +34,8 @@ export const darkTheme = {
   thirdButtonColor: "#252945",
   thirdButtonHoverColor: "#fff",
   fourthButtonHoverColor: "#1E2139",
+  inputColor: "#1E2139",
+  inputBorder: "1px solid #252945",
 };
 
 export const GlobalStyles = createGlobalStyle`

@@ -6,6 +6,10 @@ export const Container = styled.div`
   gap: 16px;
 
   margin-top: 33px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 62px;
+  }
 `;
 
 export const InvoiceContainer = styled.div`
@@ -17,21 +21,39 @@ export const InvoiceContainer = styled.div`
 
   display: flex;
   justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 28px;
+    align-items: center;
+  }
 `;
 
 export const Number = styled.p`
   margin-bottom: 24px;
   color: ${(props) => props.theme.primaryColor};
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const Name = styled.p`
   margin-bottom: 24px;
   color: ${(props) => props.theme.secondaryColor};
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const Date = styled.p`
   margin-bottom: 8px;
   color: ${(props) => props.theme.secondaryColor};
+
+  @media screen and (min-width: 768px) {
+    padding: 28px;
+    margin-bottom: 0;
+  }
 `;
 
 export const Price = styled.p`
@@ -66,4 +88,12 @@ export const StatusText = styled.p`
   letter-spacing: -0.25px;
 
   color: #33d69f;
+`;
+
+export const Div = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 `;

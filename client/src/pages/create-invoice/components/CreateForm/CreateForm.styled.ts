@@ -47,6 +47,11 @@ export const Input = styled.input`
   width: 100%;
   height: 48px;
   padding: 0 20px;
+  border-radius: 4px;
+
+  border: ${({ theme }) => theme.inputBorder};
+  background: ${({ theme }) => theme.inputColor};
+  color: ${({ theme }) => theme.primaryColor};
 
   &:focus {
     outline: none;
