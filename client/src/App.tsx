@@ -3,8 +3,10 @@ import { lightTheme, darkTheme, GlobalStyles } from "./common/themes";
 import { ThemeProvider } from "styled-components";
 import { useAppSelector } from "./redux/hooks";
 import { Routes, Route } from "react-router-dom";
-import { HomePage } from "./pages/home";
+
 import { MobileHeader } from "./common/components/MobileHeader";
+import { HomePage } from "./pages/home";
+import { CreateInvoicePage } from "./pages/create-invoice";
 
 function App() {
   const { isDarkMode } = useAppSelector((state) => state.theme);
@@ -15,6 +17,7 @@ function App() {
       <MobileHeader />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/create-invoice" element={<CreateInvoicePage />} />
       </Routes>
     </ThemeProvider>
   );

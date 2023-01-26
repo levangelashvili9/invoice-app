@@ -13,6 +13,10 @@ export const lightTheme = {
   filterMenuCBoxShadow: "0px 10px 20px rgba(72, 84, 159, 0.25)",
   checkBoxColor: "#dfe3fa",
   InvoiceBgColor: "#FFF",
+  formLabelColor: "#7E88C3",
+  thirdButtonColor: "#f9fafe",
+  thirdButtonHoverColor: "#DFE3FA",
+  fourthButtonHoverColor: "#0C0E16",
 };
 
 export const darkTheme = {
@@ -24,6 +28,10 @@ export const darkTheme = {
   filterMenuCBoxShadow: "0px 10px 20px rgba(0, 0, 0, 0.25)",
   checkBoxColor: "#1E2139",
   InvoiceBgColor: "#1E2139;",
+  formLabelColor: "#888EB0",
+  thirdButtonColor: "#252945",
+  thirdButtonHoverColor: "#fff",
+  fourthButtonHoverColor: "#1E2139",
 };
 
 export const GlobalStyles = createGlobalStyle`

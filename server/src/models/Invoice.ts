@@ -3,7 +3,10 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const InvoiceSchema = new Schema({
-  title: String,
+  number: String,
+  name: String,
+  price: String,
+  status: String,
 });
 
 const InvoiceModel = mongoose.model("Invoice", InvoiceSchema);
