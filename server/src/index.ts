@@ -29,5 +29,5 @@ app.post("/createInvoice", async (req: Request, res: Response) => {
 mongoose.set("strictQuery", false);
 mongoose.connect(process.env.MONGO_URL!).then(() => {
   console.log("SERVER RUNS SUCCESSFULLY");
-  app.listen(5500);
+  app.listen(5400);
 });
