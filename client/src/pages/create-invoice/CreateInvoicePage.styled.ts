@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 0 24px;
+  padding: 0 80px;
   margin-top: 106px;
 
   @media screen and (min-width: 768px) {
     margin-top: 136px;
-    padding: 0 48px;
+    padding: 0 150px;
   }
 
   @media screen and (min-width: 1080px) {
     margin-top: 72px;
-    padding: 0 200px;
+    padding: 0 300px;
   }
 `;
 

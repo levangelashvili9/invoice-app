@@ -15,12 +15,10 @@ import EmailSVG from "../../assets/svg/email.svg";
 import { Filter } from "./components/Filter";
 import { AddInvoice } from "./components/AddInvoice";
 import { InvoicesList } from "./components/InvoicesList";
-import { useState } from "react";
 import { useGetDataQuery } from "../../redux/api/apiSlice";
 
 export const HomePage = () => {
-  const { data } = useGetDataQuery(undefined);
-  const [isEmpty, setIsEmpty] = useState<boolean>(false);
+  const { data } = useGetDataQuery();
 
   return (
     <Container>
@@ -38,7 +36,7 @@ export const HomePage = () => {
           <AddInvoice />
         </Div>
       </Header>
-      {isEmpty ? (
+      {data && data.length === 0 ? (
         <Empty>
           <EmailImg>
             <img src={EmailSVG} alt="" />

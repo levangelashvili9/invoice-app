@@ -58,6 +58,25 @@ export const Input = styled.input`
   }
 `;
 
+export const Select = styled.select`
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  border-radius: 4px;
+
+  border: ${({ theme }) => theme.inputBorder};
+  background: ${({ theme }) => theme.inputColor};
+  color: ${({ theme }) => theme.primaryColor};
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const Option = styled.option`
+  font-size: 18px;
+`;
+
 export const ItemsList = styled.div`
   margin-top: 26px;
   margin-bottom: 24px;

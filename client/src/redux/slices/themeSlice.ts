@@ -5,7 +5,7 @@ type InitialState = {
 };
 
 const initialState: InitialState = {
-  isDarkMode: false,
+  isDarkMode: true,
 };
 
 export const themeSlice = createSlice({
